@@ -12,6 +12,12 @@ namespace CalculadorTAREA
 {
     public partial class Calcu : Form
     {
+        /// <summary>
+        /// Gutierrez Ruiz Evelyn Pamela
+        /// 06/05/2026
+        /// Esta clase se encarga de realizar operaciones básicas (suma, resta, multiplicación y división) 
+        /// entre dos números ingresados por el usuario y mostrar el resultado en pantalla.
+        /// </summary>
         Principal frmprinci = new Principal();
 
 
@@ -49,7 +55,6 @@ namespace CalculadorTAREA
             num1 = double.Parse(txbPantalla.Text);
             operacion = "-";
             txbPantalla.Text += " - ";
-
         }
 
         private void btnSuma_Click(object sender, EventArgs e)
@@ -74,24 +79,21 @@ namespace CalculadorTAREA
             {
                 string[] partes = txbPantalla.Text.Split(' ');
 
-                double n1 = double.Parse(partes[0]);
-                string op = partes[1];
-                double n2 = double.Parse(partes[2]);
-
+                double n2 = double.Parse(partes[2]); // segundo número
                 double resultado = 0;
 
-                switch (op)
+                switch (operacion)
                 {
-                    case "+": resultado = n1 + n2; break;
-                    case "-": resultado = n1 - n2; break;
-                    case "*": resultado = n1 * n2; break;
+                    case "+": resultado = num1 + n2; break;
+                    case "-": resultado = num1 - n2; break;
+                    case "*": resultado = num1 * n2; break;
                     case "/":
                         if (n2 == 0)
                         {
                             MessageBox.Show("No se puede dividir entre 0");
                             return;
                         }
-                        resultado = n1 / n2;
+                        resultado = num1 / n2;
                         break;
                 }
 
@@ -107,10 +109,8 @@ namespace CalculadorTAREA
         {
             if (txbPantalla.Text == "") return;
 
-            if (txbPantalla.Text.Contains("+") || txbPantalla.Text.Contains("-") ||
-                txbPantalla.Text.Contains("*") || txbPantalla.Text.Contains("/"))
-                return;
-
+            num1 = double.Parse(txbPantalla.Text);
+            operacion = "*";
             txbPantalla.Text += " * ";
         }
 
@@ -119,10 +119,8 @@ namespace CalculadorTAREA
 
             if (txbPantalla.Text == "") return;
 
-            if (txbPantalla.Text.Contains("+") || txbPantalla.Text.Contains("-") ||
-                txbPantalla.Text.Contains("*") || txbPantalla.Text.Contains("/"))
-                return;
-
+            num1 = double.Parse(txbPantalla.Text);
+            operacion = "/";
             txbPantalla.Text += " / ";
         }
     }

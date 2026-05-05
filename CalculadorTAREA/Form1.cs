@@ -12,6 +12,13 @@ namespace CalculadorTAREA
 {
     public partial class Principal : Form
     {
+
+        /// <summary>
+        /// Gutierrez Ruiz Evelyn Pamela
+        /// 06/06/2026
+        /// Esta clase se encarga de administra un formulario MDI, controla la apertura de ventanas como la calculadora y el convertidor
+        /// habilita o deshabilita botones según el estado y permite salir de la aplicación.
+        /// </summary>
         public Principal()
         {
             InitializeComponent();
@@ -33,7 +40,7 @@ namespace CalculadorTAREA
 
         private void Contador_Click(object sender, EventArgs e)
         {
-            Conta frmConverti = new Conta(this);
+            Convertidor frmConverti = new Convertidor(this);
             frmConverti.MdiParent = this;
             frmConverti.Show();
 
@@ -41,7 +48,7 @@ namespace CalculadorTAREA
 
         private void Salir_Click(object sender, EventArgs e)
         {
-
+            Application.Exit();
         }
     }
 }
