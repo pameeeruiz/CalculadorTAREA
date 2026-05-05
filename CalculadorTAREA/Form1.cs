@@ -33,9 +33,14 @@ namespace CalculadorTAREA
 
         private void Contador_Click(object sender, EventArgs e)
         {
-            Calcu frmConverti = new Calcu(this);
+            Conta frmConverti = new Conta(this);
             frmConverti.MdiParent = this;
             frmConverti.Show();
+
+        }
+
+        private void Salir_Click(object sender, EventArgs e)
+        {
 
         }
     }

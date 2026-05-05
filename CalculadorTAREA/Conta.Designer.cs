@@ -1,6 +1,6 @@
 ﻿namespace CalculadorTAREA
 {
-    partial class Convert
+    partial class Conta
     {
         /// <summary>
         /// Required designer variable.

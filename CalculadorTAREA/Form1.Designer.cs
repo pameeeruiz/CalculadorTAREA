@@ -67,6 +67,7 @@
             this.Salir.Name = "Salir";
             this.Salir.Size = new System.Drawing.Size(52, 24);
             this.Salir.Text = "Salir";
+            this.Salir.Click += new System.EventHandler(this.Salir_Click);
             // 
             // Principal
             // 

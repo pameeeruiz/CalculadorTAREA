@@ -52,11 +52,11 @@
     <Compile Include="Calcu.Designer.cs">
       <DependentUpon>Calcu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Convert.cs">
+    <Compile Include="Conta.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Convert.Designer.cs">
-      <DependentUpon>Convert.cs</DependentUpon>
+    <Compile Include="Conta.Designer.cs">
+      <DependentUpon>Conta.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -69,8 +69,8 @@
     <EmbeddedResource Include="Calcu.resx">
       <DependentUpon>Calcu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Convert.resx">
-      <DependentUpon>Convert.cs</DependentUpon>
+    <EmbeddedResource Include="Conta.resx">
+      <DependentUpon>Conta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

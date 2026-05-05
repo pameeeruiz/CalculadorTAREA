@@ -10,11 +10,13 @@ using System.Windows.Forms;
 
 namespace CalculadorTAREA
 {
-    public partial class Convert : Form
+    public partial class Conta : Form
     {
-        public Convert()
+        Principal principal;
+        public Conta(Principal frm)
         {
             InitializeComponent();
+            principal = frm;
         }
     }
 }
